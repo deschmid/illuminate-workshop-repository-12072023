@@ -44,9 +44,10 @@ jobs:
         
     - name: Terraform Init
       run: terraform init
-           
+      
+    - name: Terraform Taint
+      run: terraform taint -allow-missing aws_s3_bucket.illuminate_bucket
+
     - name: Terraform Apply
       run: terraform apply -auto-approve
       
-    - name: Terraform Taint
-      run: terraform taint aws_s3_bucket.illuminate_bucket
