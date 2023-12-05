@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "illuminate_bucket" {
 resource "aws_s3_bucket_versioning" "s3_versioning_for_illuminate_bucket" {
   bucket = aws_s3_bucket.illuminate_bucket.id
   versioning_configuration {
-    status = "Suspended"
+    status = "Disabled"
   }
 }
 
