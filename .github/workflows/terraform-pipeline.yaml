@@ -46,4 +46,7 @@ jobs:
       run: terraform init
            
     - name: Terraform Apply
-      run: terraform apply -auto-approve -replace="aws_s3_bucket.illuminate_bucket"
+      run: terraform apply -auto-approve
+      
+    - name: Terraform Taint
+      run: terraform taint aws_s3_bucket.illuminate_bucket
