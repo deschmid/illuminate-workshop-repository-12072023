@@ -51,6 +51,9 @@ jobs:
     - name: Terraform Taint Versioning
       run: terraform taint -allow-missing aws_s3_bucket_versioning.s3_versioning_for_illuminate_bucket
 
+    - name: Terraform Taint Access Policy
+      run: terraform taint -allow-missing aws_s3_bucket_public_access_block.illuminate_bucket_access_policy
+
     - name: Terraform Apply
       run: terraform apply -auto-approve
       
