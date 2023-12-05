@@ -1,2 +1,8 @@
-# illuminate_chicago_12072023
-Repository for the Prisma Cloud Illuminate Chicago Workshop on December 7, 2023
+# Access Details for Illuminate Chicago Workshop
+
+| Name  | Value |
+| ------------- | ------------- |
+| Prisma Cloud URL | https://app4.prismacloud.io/auth/signin  |
+| Prisma URL for Checkov Configuration | https://api4.prismacloud.io  |
+| Prisma Cloud Access Token | <something here> |
+| Repository URL | <something here> |
