@@ -4,6 +4,7 @@ resource "aws_s3_bucket" "illuminate_bucket" {
   tags = {
     Replace_this_tag = "Palo Alto Networks - Prisma Cloud"
     Environment = "Illuminate Chicago Workshop 12072023"
+    Additional_tag = "Some tag"
   }
 
   force_destroy = true
