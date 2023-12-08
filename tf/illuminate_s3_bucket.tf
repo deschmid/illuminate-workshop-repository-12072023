@@ -2,7 +2,7 @@ resource "aws_s3_bucket" "illuminate_bucket" {
   bucket        = "illuminate-workshop-bucket-chicago-12072023"
 
   tags = {
-    Owner = "Palo Alto Networks - Prisma Cloud"
+    Owner = "Palo Alto Networks - Prisma Cloud2"
     Environment = "Illuminate Chicago Workshop 12072023"
   }
 
